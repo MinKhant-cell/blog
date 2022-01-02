@@ -33,7 +33,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        <li class="nav-item">
+                            <a href="{{ route('home') }}" class="nav-link {{ request()->url() == route('home')? 'active':''}}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('category.create') }}" class="nav-link {{ request()->url() == route('category.create')? 'active':''}}">Category Manage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('post.create') }}" class="nav-link {{ request()->url() == route('post.create')? 'active':''}}">Post Manage</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
